@@ -24,3 +24,5 @@ console.log(verificarNumeroPrimo(100)); // false
 console.log(verificarNumeroPrimo(991)); // true
 console.log(verificarNumeroPrimo(104729)); // true
 console.log(verificarNumeroPrimo(14348907)); // false
+
+// atualização
