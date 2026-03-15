@@ -4,11 +4,11 @@ function transporMatriz(A) {
     console.log(A);
 
     let linhas = A.length;
-    let colunas = A[0].length;
+    let coluns = A[0].length;
 
     let transposta = [];
 
-    for (let i = 0; i < colunas; i++) {
+    for (let i = 0; i < coluns; i++) {
         transposta[i] = [];
 
         for (let j = 0; j < linhas; j++) {
