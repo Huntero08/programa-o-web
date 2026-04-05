@@ -14,7 +14,7 @@ app.get('/adicionar/:id/:nome/:qtd', (req, res) => {
         qtd: parseInt(qtd)
     });
 
-    res.send('Produto adicionado!');
+    res.send('Produto adicionado');
 });
 
 app.get('/listar', (req, res) => {
@@ -26,7 +26,7 @@ app.get('/remover/:id', (req, res) => {
 
     estoque = estoque.filter(produto => produto.id !== id);
 
-    res.send('Produto removido!');
+    res.send('Produto removido');
 });
 
 app.get('/editar/:id/:qtd', (req, res) => {
@@ -36,9 +36,9 @@ app.get('/editar/:id/:qtd', (req, res) => {
 
     if (produto) {
         produto.qtd = parseInt(qtd);
-        res.send('Quantidade atualizada!');
+        res.send('Quantidade atualizada');
     } else {
-        res.send('Produto não encontrado!');
+        res.send('Produto não encontrado');
     }
 });
 
