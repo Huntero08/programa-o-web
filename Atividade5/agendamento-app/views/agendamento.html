@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resumo do Agendamento</title>
+    <style>
+        body { font-family: 'Comic Sans MS', cursive; padding: 40px; background: #f0f0f0; }
+        .resumo { background: white; padding: 20px; border: 2px dashed #000; max-width: 600px; margin: auto; }
+        h2 { border-bottom: 1px solid #ccc; }
+        .btn-voltar { display: inline-block; margin-top: 20px; color: blue; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="resumo">
+        <h1>Resumo do Agendamento</h1>
+        
+        <h2>Paciente</h2>
+        <p><strong>Nome:</strong> {{dados_agendamento.nome}} {{dados_agendamento.sobrenome}}</p>
+        <p><strong>CPF:</strong> {{dados_agendamento.cpf}}</p>
+        <p><strong>Endereço:</strong> {{dados_agendamento.endereco}}</p>
+
+        <h2>Consulta</h2>
+        <p><strong>Clínica:</strong> {{dados_agendamento.clinica}}</p>
+        <p><strong>Especialidade:</strong> {{dados_agendamento.especialidade}}</p>
+        <p><strong>Agendado para:</strong> {{dados_agendamento.data}} às {{dados_agendamento.hora}}</p>
+        <p><strong>Observações:</strong> {{dados_agendamento.observacao}}</p>
+
+        <a href="/" class="btn-voltar">← Novo Agendamento</a>
+    </div>
+</body>
+</html>
